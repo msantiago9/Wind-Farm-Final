@@ -1,0 +1,29 @@
+Getting Started:
+To launch the software, run:
+a) WindFarmMain.java (if you are compiling and running)
+b) WindFarm.jar OR
+c) WindFarm.exe (if on windows this might run smoother)
+Option b is the most preferred choice for usage.
+
+Software components:
+- The software runs on Javax.swing framework.
+- On the left, there are a few sections for inputting variables:
+-- At the top are the basic Wind Farm attributes.
+-- At the bottom left are the performance factors for calculating the performance fitness of a particular wind farm layout.
+-- At the bottom right are the cost factors for calculating the cost fitness of a particular wind farm layout.
+- On the left is the output pane.
+-- During each generation, the best wind farm will be displayed, as well as the (x,y) coordinates of each wind turbine and its overall fitness level. The fitness level should have an increasing trend per generation but may decrease due to mutations or remeain the same due to no (improved) changes in the gene pool.
+
+Usage:
+- It is recommended to use the default values by pressing the "Use Default Value" button first. 
+- press the "START!" button to begin the simulation with the inputted values.
+- If you need to view what each text field does, please hit the "reset" button again.
+- resetting will also reset the output pane.
+- Pressing "Use Random Values" will randomize all of the input variables. This is highly experimental, output may be unpredictable.
+- You can turn on and off the performance and cost fitness calculations too if desired. This way, only one of the two fitnesses will be calculated. For example, if you only want to consider the cost of building the wind farm, uncheck "performance fitness".
+
+Calculations:
+- The default values are based on the original articles' inputted values.
+- The formulas used to calculate cost and performance fitnesses are also the same as the original article's inputted values, but each carry half of their weight (50% of the fitness would come from cost, the other 50% would come from performance).
+
+All source code was written by me, Marjon Santiago. The GUI was developed with the help of Netbeans GUI editor. 
